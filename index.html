@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Contacto</title>
+    <style>
+      .underline {
+        text-decoration: none;
+      }
+      .underline:hover {
+        text-decoration: underline;
+      }
+      .dropdown-menu a:hover {
+        background-color: transparent !important;
+        text-decoration: underline;
+      }
+      </style>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-md bg-dark mb-4">
+    <a href="" class="navbar-brand fs-3 ms-4 mb-2 mt-2 text-white bg-white" style="border-radius: 10px;">
+      <img width="70" src="img/logo2.png" />
+    </a>
+    <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+      <i class='bx bx-menu bx-md'></i>
+    </button>
+    <div class="collapse navbar-collapse text" id="btn">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link mx-3 text-white fs-5 dropdown-toggle" data-bs-toggle="dropdown">
+            Servicios
+          </a>
+          <div class="dropdown-menu bg-dark">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <a href="#" class="dropdown-item text-white"><p>Clasificación de documentos</p></a>
+                  <a href="#" class="dropdown-item text-white"><p>Reconocimiento de Imágenes</p></a>
+                  <a href="#" class="dropdown-item text-white"><p>Procesamiento del Lenguaje Natural (NPL)</p></a>
+                  <a href="#" class="dropdown-item text-white"><p>Machine Learning (ML)</p></a>
+                  <a href="#" class="dropdown-item text-white"><p>Asistentes virtuales</p></a>
+                </div>
+              </div>
+            </div>
+        <li class="nav-item" style="margin-right: 15px;">
+          <a href="#" class="nav-link mx-3 text-white fs-5 ">Inicio</a>
+        </li>
+        <li class="nav-item bg-warning" style="margin-right: 20px;">
+          <a href="#" class=" nav-link mx-3 text-white fs-5">Contacto</a>
+        </li>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+     <!--CONTENEDOR -->
+     <div class="container" style="background-color: #ffffff;" >
+      <!--PRIMERA FILA -->
+    <div class="row text-center">
+      <!--PRIMERA COLUMNA -->
+    <div clas="col ">
+      <h2>Contacto</h2>
+    </div>
+    </div> 
+    <div class="col"> 
+      <!--CONTENIDO DE LA COLUMNA - TITULO FORMULARIO -->
+      <!--ETIQUETA FORM QUE NECESITA VALIDACION NOVALIDATE -->
+      <!--FILA -->
+      <form class="row g-3  mt-4 mb-4 needs-validation" novalidate>
+        <!--COLUMNA QUE OCUPE 4: label y type -->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 position-relative">
+          <input type="text" class="form-control" id="nombreCompleto" placeholder="Nombre completo" required>
+          <div class="valid-tooltip" >¡Campo válido! </div>
+          <div class="invalid-tooltip" >Debe completar los datos. </div>
+        </div>
+        <!--COLUMNA QUE OCUPE 4: label y type -->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 position-relative">
+          <input type="text" class="form-control" id="email" placeholder="Email" required>
+          <div class="valid-tooltip" >¡Campo válido! </div>
+          <div class="invalid-tooltip" >Debe completar los datos. </div>
+        </div>
+        <!--COLUMNA QUE OCUPE 4: label y select -->
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 position-relative">
+          <select class="form-select" id="prefijo" required>
+              <!--Con value="" para que no valide hasta que se seleccione otro -->
+            <option selected disabled value="">Prefijo</option>
+            <option value="+1 (US)">+1 (US)</option>
+            <option value="+33 (FR)">+33 (FR)</option>
+            <option value="+34 (ES)">+34 (ES)</option>
+            <option value="+44 (GB)">+44 (GB)</option>
+            <option value="+51 (PE)">+51 (PE)</option>
+          </select>
+          <div class="valid-tooltip" >¡Campo válido! </div>
+          <div class="invalid-tooltip" >Debe completar los datos. </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 col-xxl-9 position-relative">
+          <input type="text" class="form-control" id="telefono" placeHolder="Telefono" required>
+          <div class="valid-tooltip" >¡Campo válido! </div>
+          <div class="invalid-tooltip" >Debe completar los datos. </div>
+          
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 position-relative">
+          <label for="desarrollo" class="form-label">Nivel de experiencia en desarrollo web</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="experiencia" id="principiante" value="principiante" required>
+            <label class="form-check-label" for="principiante">Principiante</label>
+            <div class="valid-tooltip" >¡Campo válido! </div>
+          <div class="invalid-tooltip" >Debe completar los datos. </div>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="experiencia" id="intermedio" value="intermedio">
+            <label class="form-check-label" for="intermedio">Intermedio</label>
+            <div class="valid-tooltip" >¡Campo válido! </div>
+          <div class="invalid-tooltip" >Debe completar los datos. </div>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="experiencia" id="avanzado" value="avanzado">
+            <label class="form-check-label" for="avanzado">Avanzado</label>
+            <div class="valid-tooltip" >¡Campo válido! </div>
+          <div class="invalid-tooltip" >Debe completar los datos. </div>
+          </div>          
+          
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 position-relative">
+          <label for="mensaje">Mensaje:</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="2" required></textarea>
+          <div class="valid-tooltip" >¡Campo válido! </div>
+          <div class="invalid-tooltip" >Debe completar los datos. </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 position-relative">
+          <input type="checkbox" class="form-check-input" id="aceptarPrivacidad" name="aceptarPrivacidad" required>
+        <label class="form-check-label" for="aceptarPrivacidad">Acepto que se guarde mi información privada.</label>
+          <div class="valid-tooltip" >¡Campo válido! </div>
+          <div class="invalid-tooltip" >Debe completar los datos. </div>
+        </div>
+        <!--COLUMNA QUE OCUPE 12: boton -->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <button class="btn btn-warning fw-bold float-start" type="submit">Enviar</button>
+        </div>
+      </form>
+    <!--DIV DE LA COLUMNA SUPERIOR-->
+    </div>
+  <!--DIV DE LA FILA-->
+  </div>
+<!--DIV DEL CONTENEDOR-->
+</div>
+
+<footer>
+ <!--Contenedor fluido de color oscuro-->
+ <div class="container-fluid bg-dark mt-4">
+  <!--Primera fila, todo contenido blanco, espacio arriba y abajo, -->
+  <div class="row pt-5 pb-3 text-white">
+    <!--Primera columna-->
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex flex-column align-items-center">
+      <!--Elementos primera columna-->
+      <!--Aumentar tamaño y margen inferior con el resto de elementos-->
+      <p class="h5 mb-4"> Contacta con nosotros</p>
+      <!--Iconos de bootstrap-->
+       <div class="mb-2">
+        <!--Quitar subrayado, solo cuando se pasa el cursor, texto blanco-->
+        <p> <a class="underline text-white" href="#"><i class="bi bi-telephone"></i></a> +34 673918726</p>
+      </div>
+      <div class="mb-2">
+        <p> <a class="underline text-white" href="#"><i class="bi bi-envelope"></i></a> AvanzIA@gmail.com</p>
+      </div>
+      <div class="mb-2">
+        <p> <a class="underline text-white" href="#"><i class="bi bi-house"></i></a> C. San Francisco, 17, 41710 (Utrera)</p>
+      </div>
+    </div>
+      <!--Segunda columna-->
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex flex-column align-items-center">
+        <!--Elementos segunda columna--> 
+      <p class="h5 mb-4">Síguenos</p>
+      <div class="mb-3">
+        <!--Quitar subrayado, solo cuando se pasa el cursor, texto blanco-->
+      <a class="underline text-white" href="#" ><i class="bi bi-facebook"></i>  Facebook</a>
+      </div>
+      <div class="mb-3">
+        <a class="underline text-white" href="#" ><i class="bi bi-twitter"></i>  Twitter</a>
+      </div>
+      <div class="mb-3">
+        <a class="underline text-white" href="#" ><i class="bi bi-google"></i>  Google</a>
+      </div>
+    </div>
+      <!--Tercera columna-->
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex flex-column align-items-center">
+      <!--Elementos tercera columna--> 
+      <p class="h5 mb-3">Licencias y Legal</p>
+      <div class="mb-3">
+        <a class="underline text-white" href="#">Términos y condiciones</a>
+      </div>
+      <div class="mb-3">
+        <a class="underline text-white" href="#">Política de Privacidad</a>
+      </div>
+      <div class="mb-3">
+        <a class="underline text-white" href="#">Política de Cookies</a>
+      </div>
+      <div class="mb-3">
+        <a class="underline text-white" href="#">Aviso Legal</a>
+      </div>
+    </div>
+     <!--Cuarta columna-->
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+      <!--Elementos cuarta columna y centrar-->
+      <p><i class="bi bi-c-circle"></i> Copyright - All Rights Reserved 2023</p>
+    </div>
+  </div>
+</div>
+</footer>
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+'use strict'
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+var forms = document.querySelectorAll('.needs-validation')
+
+// Loop over them and prevent submission
+Array.prototype.slice.call(forms)
+.forEach(function (form) {
+  form.addEventListener('submit', function (event) {
+    if (!form.checkValidity()) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+
+    form.classList.add('was-validated')
+  }, false)
+})
+})()
+</script>
+    <!-- Incluye las bibliotecas de Bootstrap y los scripts aquí -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+
+
